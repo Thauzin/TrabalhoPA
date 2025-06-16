@@ -1,4 +1,5 @@
 package com.trabalhoPA.trabalhoPA.models;
+import com.trabalhoPA.trabalhoPA.DTOs.ModalidadeDTO;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -36,7 +37,11 @@ public class Modalidade {
     // @JoinColumn(name = "modalidade_academia")
     // esperar criação da academia
 
-    // criar DTO
+    public Modalidade(ModalidadeDTO modalidade) {
+        this.id = modalidade.id();
+        this.nome = modalidade.nome();
+        this.descricao = modalidade.descricao();
+    }
 
 
 }
