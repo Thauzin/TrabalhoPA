@@ -1,7 +1,5 @@
 package com.trabalhoPA.trabalhoPA.DTOs;
 
-public class ExerciciosDTOcom.seuprojeto.dto;
-
 public class ExercicioDTO {
 
     private String nome;
@@ -40,7 +38,5 @@ public class ExercicioDTO {
     public void setModalidade(String modalidade) {
         this.modalidade = modalidade;
     }
-}
- {
-    
+   
 }

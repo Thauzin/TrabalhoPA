@@ -1,13 +1,12 @@
-package controller;
+package com.trabalhoPA.trabalhoPA.controller;
 
-public package com.seuprojeto.controller;
 
-import com.seuprojeto.dto.ExercicioDTO;
-import com.seuprojeto.model.Exercicio;
-import com.seuprojeto.service.ExercicioService;
+import com.trabalhoPA.trabalhoPA.DTOs.ExercicioDTO;
+
+import com.trabalhoPA.trabalhoPA.models.Exercicio;
+import com.trabalhoPA.trabalhoPA.services.ExercicioService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
@@ -43,7 +42,5 @@ public class ExercicioController {
         service.deletar(id);
         return ResponseEntity.noContent().build();
     }
-}
- {
-    
+   
 }

@@ -1,8 +1,10 @@
-package com.seuprojeto.service;
+package com.trabalhoPA.trabalhoPA.services;
 
-import com.seuprojeto.dto.ExercicioDTO;
-import com.seuprojeto.model.Exercicio;
-import com.seuprojeto.repository.ExercicioRepository;
+
+import com.trabalhoPA.trabalhoPA.DTOs.ExercicioDTO;
+import com.trabalhoPA.trabalhoPA.models.Exercicio;
+
+import com.trabalhoPA.trabalhoPA.repositories.ExercicioRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

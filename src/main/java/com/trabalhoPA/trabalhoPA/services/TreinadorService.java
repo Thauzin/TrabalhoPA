@@ -1,10 +1,7 @@
 package com.trabalhoPA.trabalhoPA.services;
 
-
 import com.trabalhoPA.trabalhoPA.models.Treinador;
-
 import com.trabalhoPA.trabalhoPA.DTOs.TreinadorDTO;
-
 import com.trabalhoPA.trabalhoPA.repositories.TreinadorRepository;
 import java.util.List;
 

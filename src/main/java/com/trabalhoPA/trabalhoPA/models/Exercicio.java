@@ -3,9 +3,8 @@ package com.trabalhoPA.trabalhoPA.models;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 
-public public class Exercicio {
+public class Exercicio {
 
-    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
@@ -49,7 +48,6 @@ public public class Exercicio {
     public void setModalidade(String modalidade) {
         this.modalidade = modalidade;
     }
+
 }
- {
     
-}
