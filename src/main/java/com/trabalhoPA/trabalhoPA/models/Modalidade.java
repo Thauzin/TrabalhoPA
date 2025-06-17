@@ -32,6 +32,7 @@ public class Modalidade {
     @Column(nullable = false)
     private String nome;
     private String descricao; 
+    private int idadeMinima;
 
    // @ManyToMany
     // @JoinColumn(name = "modalidade_academia")
@@ -41,6 +42,8 @@ public class Modalidade {
         this.id = modalidade.id();
         this.nome = modalidade.nome();
         this.descricao = modalidade.descricao();
+        this.idadeMinima = modalidade.idadeMinima();
+
     }
 
 
