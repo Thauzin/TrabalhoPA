@@ -1,4 +1,4 @@
-package model;
+package com.trabalhoPA.trabalhoPA.models;
 
 public class Treinador {
     private Long id;

@@ -1,7 +1,7 @@
-package model;
+package com.trabalhoPA.trabalhoPA.models;
 
-import model.DTO.TreinadorDTO;
-import model.controller.TreinadorController;
+import com.trabalhoPA.trabalhoPA.DTOs.TreinadorDTO;
+import com.trabalhoPA.trabalhoPA.controller.TreinadorController;
 
 public class Main {
     public static void main(String[] args) {

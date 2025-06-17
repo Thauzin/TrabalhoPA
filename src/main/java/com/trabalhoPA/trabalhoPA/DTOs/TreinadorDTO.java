@@ -1,4 +1,4 @@
-package model.DTO;
+package com.trabalhoPA.trabalhoPA.DTOs;
 
 public class TreinadorDTO {
     private String nome;

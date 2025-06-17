@@ -1,8 +1,9 @@
-package model.controller;
+package com.trabalhoPA.trabalhoPA.controller;
 
-import model.DTO.TreinadorDTO;
-import model.Treinador;
-import model.service.TreinadorService;
+
+import com.trabalhoPA.trabalhoPA.models.Treinador;
+import com.trabalhoPA.trabalhoPA.DTOs.TreinadorDTO;
+import com.trabalhoPA.trabalhoPA.services.TreinadorService;
 import java.util.List;
 
 public class TreinadorController {
