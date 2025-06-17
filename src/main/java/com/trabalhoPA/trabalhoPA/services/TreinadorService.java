@@ -1,8 +1,11 @@
-package model.service;
+package com.trabalhoPA.trabalhoPA.services;
 
-import model.Treinador;
-import model.DTO.TreinadorDTO;
-import model.repository.TreinadorRepository;
+
+import com.trabalhoPA.trabalhoPA.models.Treinador;
+
+import com.trabalhoPA.trabalhoPA.DTOs.TreinadorDTO;
+
+import com.trabalhoPA.trabalhoPA.repositories.TreinadorRepository;
 import java.util.List;
 
 public class TreinadorService {

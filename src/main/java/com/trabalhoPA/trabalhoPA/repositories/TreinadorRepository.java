@@ -1,6 +1,6 @@
-package model.repository;
+package com.trabalhoPA.trabalhoPA.repositories;
 
-import model.Treinador;
+import com.trabalhoPA.trabalhoPA.models.Treinador;
 import java.util.ArrayList;
 import java.util.List;
 
