@@ -20,8 +20,8 @@ public class ModalidadeService {
         return modalidadeRepository.findAll().stream().map(modalidade -> new ModalidadeDTO(modalidade)).toList();
     }
 
-    //public ModalidadeDTO salvar (ModalidadeDTO modalidadeDTO) {
-        //Modalidade modalidadeEntity = new Modalidade(Modalidade);
+    //public ModalidadeDTO salvar (ModalidadeDTO modalidade) {
+       // Modalidade modalidadeEntity = new Modalidade(Modalidade);
     //}
 
   //  @Transactional

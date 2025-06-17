@@ -1,8 +1,6 @@
 package com.trabalhoPA.trabalhoPA.controller;
 
-
 import com.trabalhoPA.trabalhoPA.DTOs.ExercicioDTO;
-
 import com.trabalhoPA.trabalhoPA.models.Exercicio;
 import com.trabalhoPA.trabalhoPA.services.ExercicioService;
 import org.springframework.http.ResponseEntity;
