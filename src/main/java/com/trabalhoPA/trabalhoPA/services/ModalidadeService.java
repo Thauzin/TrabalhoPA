@@ -1,7 +1,6 @@
 package com.trabalhoPA.trabalhoPA.services;
 
 import java.util.List;
-import java.util.Optional;
 import org.springframework.stereotype.Service;
 import com.trabalhoPA.trabalhoPA.models.Modalidade;
 import com.trabalhoPA.trabalhoPA.repositories.ModalidadeRepository;
@@ -20,12 +19,28 @@ public class ModalidadeService {
         return modalidadeRepository.findAll().stream().map(modalidade -> new ModalidadeDTO(modalidade)).toList();
     }
 
-    //public ModalidadeDTO salvar (ModalidadeDTO modalidade) {
-       // Modalidade modalidadeEntity = new Modalidade(Modalidade);
-    //}
+    public ModalidadeDTO salvar (ModalidadeDTO dto) {
+        Modalidade nova = new Modalidade(dto);
+        Modalidade salva = modalidadeRepository.save(nova);
+        return new ModalidadeDTO(salva);
+    }
 
-  //  @Transactional
-    //public ModalidadeDTO salvar(Long id, ModalidadeDTO modalidadeDTO) {
-        //ModalidadeRepository.findById(id).orElseThrow(()-> new NaoEncontradoException("Ninja com id" + id +" não encontrado"));
-   // }
+   @Transactional
+    public ModalidadeDTO salvar(Long id, ModalidadeDTO dto) {
+        Modalidade modalidade = modalidadeRepository.findById(id).orElseThrow(() -> new RuntimeException("Modalidade com id " + id + " não encontrada"));
+
+        modalidade.setNome(dto.nome());
+        modalidade.setDescricao(dto.descricao());
+        modalidade.setIdadeMinima(dto.idadeMinima());
+
+        return new ModalidadeDTO(modalidade);
+    }
+
+    public ModalidadeDTO buscarPorId (Long id){
+         return new ModalidadeDTO(modalidadeRepository.findById(id).orElseThrow(() -> new RuntimeException("Modalidade com id " + id + " não encontrada")));
+    }
+
+    public void deletar (Long id){
+        modalidadeRepository.deleteById(id);
+    }
 }

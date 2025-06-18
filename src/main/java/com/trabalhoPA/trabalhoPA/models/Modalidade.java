@@ -6,10 +6,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToMany;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -36,7 +32,6 @@ public class Modalidade {
 
    // @ManyToMany
     // @JoinColumn(name = "modalidade_academia")
-    // esperar criação da academia
 
     public Modalidade(ModalidadeDTO modalidade) {
         this.id = modalidade.id();
