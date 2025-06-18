@@ -1,6 +1,8 @@
 package com.trabalhoPA.trabalhoPA.models;
 
+import com.trabalhoPA.trabalhoPA.DTOs.ExercicioDTO;
 import com.trabalhoPA.trabalhoPA.DTOs.TreinadorDTO;
+import com.trabalhoPA.trabalhoPA.controller.ExercicioController;
 import com.trabalhoPA.trabalhoPA.controller.TreinadorController;
 
 public class Main {
@@ -13,7 +15,6 @@ public class Main {
 
         TreinadorController controller = new TreinadorController();
         Treinador t = controller.criar(dto);
-
         System.out.println("Treinador criado: " + t.getNome());
     }
 }
